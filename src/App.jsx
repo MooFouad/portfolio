@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import "./App.css";
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -8,11 +9,13 @@ import Projects from "./components/Projects";
 
 
 function App() {
+  const aboutRef = useRef()
+
   return (
     <>
       <Navbar />
       <Header />
-      <About />
+      <About about={aboutRef}/>
       <Projects />
       <Contact />
       <Footer />

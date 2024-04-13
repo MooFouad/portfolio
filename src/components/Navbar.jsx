@@ -14,7 +14,7 @@ const Navbar = () => {
                 <a href="#">MoFouad</a>
             </div>
             {/* icons  */}
-            <div className="md:hidden text-white py-2 text-[30px]">
+            <div className="md:hidden text-white py-2 text-[30px] cursor-pointer">
                 {toggle && <FiMenu onClick={()=>setToggel(!toggle)}/>}
                 {!toggle && <IoMdClose onClick={()=>setToggel(!toggle)}/>}
             </div>

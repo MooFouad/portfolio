@@ -4,10 +4,10 @@ import { motion } from "framer-motion"
 const Header = () => {
     return (
         <div
-        className="bg-dark-theme w-[100vw] md:h-[100vh] truncate justify-center items-center p-10 text-white flex max-md:flex-col max-md:text-wrap pt-[100px]">
-        {/* <div className="">
-                    <img src="/images/profile.jpg" alt="profile img" className="rounded-full" />
-                </div> */}
+        className="bg-dark-theme w-[100vw] min-h-[100vh] truncate justify-center items-center p-10 text-white flex flex-col max-md:text-wrap pt-[100px] gap-6">
+        <div className="flex justify-center items-center">
+            <img src="/images/profile.jpg" alt="profile img" className="rounded-full min-w-[150px] max-w-[180px] " />
+        </div>
         <motion.div
         whileInView={{
             opacity:[0, 1],

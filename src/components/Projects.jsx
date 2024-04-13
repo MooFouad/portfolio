@@ -13,6 +13,13 @@
         tec : ['React', 'Firebase', 'ReduxToolkit', 'React-Router', 'styled-components'],
         },
         {
+        name: "shopper",
+        cat: "react",
+        url : 'https://shopper-ecommerce-two.vercel.app/',
+        tec : ['React', 'useContext', 'React-Router', 'TailwindCSS'],
+        },
+        
+        {
         name: "crypto",
         cat: "react",
         url : 'https://beautiful-muffin-45a42f.netlify.app/',
@@ -96,7 +103,7 @@
                 ))}
             </div>
                 {/* project container */}
-            <div className="flex  flex-wrap justify-center items-center max-md:flex-col">
+            <div className="flex  flex-wrap justify-start items-center max-md:flex-col">
                 {projects.map((project, id) => (
                 <div className="flex flex-col justify-center items-center" key={id}>
                     {category === project.cat && (
