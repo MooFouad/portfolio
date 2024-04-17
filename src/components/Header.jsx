@@ -35,7 +35,7 @@ const Header = () => {
                     hover:cursor-pointer bold hover:text-blue hover:bg-white duration-300 ease-in-out"
             >
                 <MdDownload className="inline mr-2"/>
-                <a href="Mohamed Fouad Resume.pdf" download='Mohamed Fouad Resume.pdf'>Download Resume</a>
+                <a href="Mohamed_Fouad.pdf" download='Mohamed_Fouad.pdf'>Download Resume</a>
             </button>
         </motion.div>
         </div>

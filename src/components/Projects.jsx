@@ -139,9 +139,9 @@
                                 }
                         </div>
                         {/* review */}
-                        <div className="">
-                            <button className=" bg-blue py-2 px-8 rounded-xl hover:text-blue hover:bg-white duration-500">
-                                <a className="" href={project.url} target="_blank">Live Preview</a>
+                        <div className="w-full">
+                            <button className=" bg-blue py-2 px-8 rounded-xl hover:text-blue hover:bg-white duration-500 w-full">
+                                <a href={project.url} target="_blank">Live Preview</a>
                             </button>
                         </div>
                     </motion.div>
