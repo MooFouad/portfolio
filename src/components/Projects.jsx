@@ -18,7 +18,12 @@
         url : 'https://shopper-ecommerce-two.vercel.app/',
         tec : ['React', 'useContext', 'React-Router', 'TailwindCSS'],
         },
-        
+        {
+        name: "dashboard",
+        cat: "react",
+        url : 'https://dashboard-one-teal.vercel.app/',
+        tec : ['React', 'useContext', 'React-Router', 'Syncfusion', 'TailwindCSS'],
+        },
         {
         name: "crypto",
         cat: "react",
