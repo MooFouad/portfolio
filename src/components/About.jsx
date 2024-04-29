@@ -12,6 +12,7 @@ import { FaSass } from "react-icons/fa";
 import { IoLogoFirebase } from "react-icons/io5";
 import { IoIosGitBranch } from "react-icons/io";
 import { FaGithub } from "react-icons/fa";
+import { SiJest } from "react-icons/si";
 import { motion } from "framer-motion"
 
 const About = () => {
@@ -78,6 +79,10 @@ const About = () => {
                 <div className="flex flex-col justify-center items-center gap-2">
                     <SiReactquery className="text-[40px] text-blue"/>
                     <p>React Query</p>
+                </div>
+                <div className="flex flex-col justify-center items-center gap-2">
+                    <SiJest className="text-[40px] text-blue"/>
+                    <p>React Jest</p>
                 </div>
                 <div className="flex flex-col justify-center items-center gap-2">
                     <IoLogoFirebase className="text-[40px] text-blue"/>
