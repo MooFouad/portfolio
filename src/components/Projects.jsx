@@ -144,11 +144,11 @@
                                 }
                         </div>
                         {/* review */}
-                        <div className="w-full">
-                            <button className=" bg-blue py-2 px-8 rounded-xl hover:text-blue hover:bg-white duration-500 w-full">
-                                <a href={project.url} target="_blank">Live Preview</a>
-                            </button>
-                        </div>
+                        <a 
+                        href={project.url} target="_blank" 
+                        className="w-full bg-blue py-2 px-8 rounded-xl hover:text-blue hover:bg-white duration-500 cursor-pointer text-center text-lg">
+                                Live Preview
+                        </a>
                     </motion.div>
                     )}
                 </div>

@@ -14,6 +14,7 @@ import { IoIosGitBranch } from "react-icons/io";
 import { FaGithub } from "react-icons/fa";
 import { SiJest } from "react-icons/si";
 import { TbMobiledata } from "react-icons/tb";
+// import { RiNextjsLine } from "react-icons/ri";
 import { motion } from "framer-motion"
 
 const About = () => {
@@ -69,6 +70,10 @@ const About = () => {
                     <FaReact className="text-[40px] text-blue"/>
                     <p>React</p>
                 </div>
+                {/* <div className="flex flex-col justify-center items-center gap-2">
+                    <RiNextjsLine className="text-[40px] text-blue"/>
+                    <p>NextJS</p>
+                </div> */}
                 <div className="flex flex-col justify-center items-center gap-2">
                     <SiTypescript className="text-[40px] text-blue"/>
                     <p>Typescript</p>
