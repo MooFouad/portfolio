@@ -11,14 +11,29 @@ export const ContactSection = () => {
         ></div>
         <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-center">
           <div className="">
-            <h2 className="font-serif text-2xl md:text-3xl">Let's create something amazing together</h2>
-            <p className="mt-2 text-sm md:text-base">Ready to bring your next project to life? Let's connect and discuss how can I help you achieve your goals.</p>
-            <p className="mt-3 text-sm md:text-base font-semibold">📧 mofouad001@gmail.com</p>
-            <p className="mt-1 text-sm md:text-base font-semibold">📞 +966 50 367 1924</p>
+            <h2 className="font-serif text-2xl md:text-3xl">Let's Build Something Exceptional Together</h2>
+            <p className="mt-2 text-sm md:text-base">
+              Ready to transform your vision into reality? Whether you're looking to build a new application,
+              optimize an existing platform, or need expert consultation, I'm here to help deliver outstanding results.
+            </p>
+            <div className="mt-4 space-y-2">
+              <p className="text-sm md:text-base font-semibold flex items-center gap-2">
+                <span>📧</span>
+                <span>mofouad001@gmail.com</span>
+              </p>
+              <p className="text-sm md:text-base font-semibold flex items-center gap-2">
+                <span>📞</span>
+                <span>+966 50 367 1924</span>
+              </p>
+              <p className="text-sm md:text-base font-semibold flex items-center gap-2">
+                <span>📍</span>
+                <span>Riyadh, Saudi Arabia</span>
+              </p>
+            </div>
           </div>
           <div className="">
-            <a href="mailto:mofouad001@gmail.com" className="text-white bg-gray-900 inline-flex h-12 px-6 items-center rounded-xl gap-2 w-max border border-gray-950 hover:bg-gray-800 transition-colors">
-              <span className="font-semibold">Contact Me</span>
+            <a href="mailto:mofouad001@gmail.com" className="text-white bg-gray-900 inline-flex h-12 px-6 items-center rounded-xl gap-2 w-max border border-gray-950 hover:bg-gray-800 transition-colors whitespace-nowrap">
+              <span className="font-semibold">Get In Touch</span>
               <ArrowUpRightIcon className="size-4" />
             </a>
           </div>
