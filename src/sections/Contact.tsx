@@ -13,12 +13,14 @@ export const ContactSection = () => {
           <div className="">
             <h2 className="font-serif text-2xl md:text-3xl">Let's create something amazing together</h2>
             <p className="mt-2 text-sm md:text-base">Ready to bring your next project to life? Let's connect and discuss how can I help you achieve your goals.</p>
+            <p className="mt-3 text-sm md:text-base font-semibold">📧 mofouad001@gmail.com</p>
+            <p className="mt-1 text-sm md:text-base font-semibold">📞 +966 50 367 1924</p>
           </div>
           <div className="">
-            <button className="text-white bg-gray-900 inline-flex h-12 px-6 items-center rounded-xl gap-2 w-max border border-gray-950">
+            <a href="mailto:mofouad001@gmail.com" className="text-white bg-gray-900 inline-flex h-12 px-6 items-center rounded-xl gap-2 w-max border border-gray-950 hover:bg-gray-800 transition-colors">
               <span className="font-semibold">Contact Me</span>
               <ArrowUpRightIcon className="size-4" />
-            </button>  
+            </a>
           </div>
         </div>
           </div>

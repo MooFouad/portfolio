@@ -14,6 +14,10 @@ export const Footer = () => {
       title: "Twitter",
       href: "https://x.com/Mo_fouad0?t=SatpzsAP-b6gUeZpDnEdiw&s=08"
     },
+    {
+      title: "Email",
+      href: "mailto:mofouad001@gmail.com"
+    },
   ]
   return(
     <footer className='relative overflow-x-clip'>

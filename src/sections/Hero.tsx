@@ -64,10 +64,11 @@ export const HeroSection = () => {
         {/* img container */}
         {/* heading */}
         <div className="max-w-lg mx-auto">
-          <h1 className='font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide'>Building Exceptional User Experiences</h1>
+          <h1 className='font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide'>Mohamed Fouad</h1>
+          <h2 className='font-serif text-xl md:text-2xl text-center mt-4 text-emerald-300'>MERN Stack Developer at GTS</h2>
           <p className='mt-4 text-center text-white/60 md:text-lg'>
-            I specialize in transforming designs into functional, high-performing
-            web applications. Let's discuss your next project.
+            Based in Riyadh, Saudi Arabia. I specialize in transforming designs into functional, high-performing
+            web applications using React.js, Next.js, and TypeScript. Let's discuss your next project.
           </p>
         </div>
         {/*---------- heading ---------------*/}
