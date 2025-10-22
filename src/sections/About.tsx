@@ -137,22 +137,22 @@ export const AboutSection = () => {
   const constraintRef = useRef(null);
   return <div id="about" className="py-20 lg:py-28">
     <div className="container">
-    <SectionHeader eyebrow="About Me" title="A Glimpse Into My World" description="Passionate MERN Stack Developer with hands-on experience in building responsive, high-performance web applications. Currently working at GTS in Riyadh, Saudi Arabia." />
+    <SectionHeader eyebrow="About Me" title="Beyond the Code" description="Discover my passions, technical toolkit, and the diverse interests that fuel my creativity and drive for excellence in software development." />
     <div className="mt-20 flex flex-col gap-8">
       <div className="grid grid-cols-1 md:grid-cols-5 gap-8 lg:grid-cols-3">
         <Card className="h-[320px] md:col-span-2 lg:col-span-1">
-          <CardHeader 
-            title="My Reads" 
-            description="Explore the books shaping my perspective." 
+          <CardHeader
+            title="Continuous Learning"
+            description="Books and resources that inspire my professional growth."
           />       
         <div className="w-40 mx-auto mt-2 md:-mt-0">
           <Image src={bookImage} alt="book image" />
         </div>
         </Card>
         <Card className="h-[320px] p-0 md:col-span-3 lg:col-span-2">
-          <CardHeader 
-            title="My Toolbox" 
-            description="Explore the technologies and tools I used to craft exceptional digital experiences." 
+          <CardHeader
+            title="Technical Arsenal"
+            description="The cutting-edge technologies and frameworks I leverage to build exceptional digital solutions."
             className="px-6 pt-6"
           />  
         <ToolboxItems items={toolboxItem} className="" itemsWrapperClassName="animate-move-left [animation-duration:30s]" />
@@ -161,9 +161,9 @@ export const AboutSection = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-3 gap-8">
         <Card className="h-[320px] p-0 flex flex-col md:col-span-3 lg:col-span-2">
-        <CardHeader 
-            title="Beyond the code" 
-            description="Explore my interests and hobbies beyond the digital realm." 
+        <CardHeader
+            title="Life Beyond Code"
+            description="Personal passions and activities that drive my creativity and maintain work-life balance."
             className="p-6"
           />
           <div className="relative flex-1" ref={constraintRef}>
@@ -195,43 +195,6 @@ export const AboutSection = () => {
             <Image src={smileMemoji} alt="map image"
               className="size-20"
             />
-          </div>
-        </Card>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <Card className="p-6">
-          <CardHeader
-            title="Work Experience"
-            description="My professional journey in software development."
-          />
-          <div className="mt-6 space-y-4">
-            <div className="border-l-2 border-emerald-300 pl-4">
-              <h3 className="font-semibold text-lg">Front End Developer</h3>
-              <p className="text-emerald-300 text-sm">GTS • Jan 2025 - Present</p>
-              <p className="text-white/60 text-sm mt-2">Developing and maintaining responsive web applications using React.js, Next.js, and TypeScript. Building cross-browser compatible interfaces and integrating RESTful APIs.</p>
-            </div>
-            <div className="border-l-2 border-sky-400 pl-4">
-              <h3 className="font-semibold text-lg">Front End Developer</h3>
-              <p className="text-sky-400 text-sm">Relvecrop • Oct 2023 - Dec 2024</p>
-              <p className="text-white/60 text-sm mt-2">Developed a football cards game using Next.js with focus on seamless user experience. Implemented responsive interfaces and conducted code reviews.</p>
-            </div>
-          </div>
-        </Card>
-        <Card className="p-6">
-          <CardHeader
-            title="Education & Skills"
-            description="Academic background and core competencies."
-          />
-          <div className="mt-6">
-            <div className="border-l-2 border-emerald-300 pl-4 mb-6">
-              <h3 className="font-semibold text-lg">Bachelor of Computer Science</h3>
-              <p className="text-emerald-300 text-sm">Menofia University • 2018 - 2022</p>
-              <p className="text-white/60 text-sm mt-2">Graduated with comprehensive knowledge in computer science fundamentals, data structures, and software engineering principles.</p>
-            </div>
-            <div className="space-y-2">
-              <h4 className="font-semibold">Core Competencies:</h4>
-              <p className="text-white/60 text-sm">SEO Optimization • Cross-browser Compatibility • API Integration • Mobile-first Design • Code Reviews • Performance Optimization • Agile Methodologies</p>
-            </div>
           </div>
         </Card>
       </div>

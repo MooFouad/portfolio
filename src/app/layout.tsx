@@ -7,9 +7,9 @@ const inter = Inter({subsets:['latin'], variable: '--font-sans'})
 const calistoga = Calistoga({subsets:['latin'], variable: '--font-serif', weight : ['400'],})
 
 export const metadata: Metadata = {
-  title: "Mohamed Fouad | MERN Stack Developer | Frontend Specialist",
-  description: "Passionate MERN Stack Developer specializing in React.js, Next.js, and TypeScript. Currently working at GTS in Riyadh, Saudi Arabia. Expert in building responsive, high-performance web applications with SEO optimization and modern UI/UX design.",
-  keywords: ["Mohamed Fouad", "MERN Stack Developer", "Frontend Developer", "React.js Developer", "Next.js Developer", "TypeScript", "Full Stack Developer", "Web Developer Riyadh", "GTS Developer", "JavaScript Developer", "React Developer Saudi Arabia"],
+  title: "Mohamed Fouad | Full Stack Developer | MERN Stack Expert",
+  description: "Experienced Full Stack Developer specializing in the MERN stack (MongoDB, Express.js, React.js, Node.js), Next.js, and TypeScript. Currently working at GTS in Riyadh, Saudi Arabia. Expert in architecting scalable web applications with exceptional performance, SEO optimization, and modern UI/UX design.",
+  keywords: ["Mohamed Fouad", "Full Stack Developer", "MERN Stack Developer", "React.js Developer", "Next.js Developer", "Node.js Developer", "TypeScript Developer", "MongoDB Developer", "Web Developer Riyadh", "GTS Developer", "JavaScript Developer", "Full Stack Engineer Saudi Arabia", "Software Engineer"],
   authors: [{ name: "Mohamed Fouad", url: "https://github.com/MooFouad" }],
   creator: "Mohamed Fouad",
   publisher: "Mohamed Fouad",
@@ -17,22 +17,22 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://moofouad.github.io/portfolio",
-    siteName: "Mohamed Fouad Portfolio",
-    title: "Mohamed Fouad | MERN Stack Developer | Frontend Specialist",
-    description: "Passionate MERN Stack Developer specializing in React.js, Next.js, and TypeScript. Currently working at GTS in Riyadh, Saudi Arabia.",
+    siteName: "Mohamed Fouad - Full Stack Developer Portfolio",
+    title: "Mohamed Fouad | Full Stack Developer | MERN Stack Expert",
+    description: "Experienced Full Stack Developer specializing in the MERN stack, Next.js, and TypeScript. Currently working at GTS in Riyadh, Saudi Arabia. Building scalable, high-performance web applications.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Mohamed Fouad - MERN Stack Developer Portfolio",
+        alt: "Mohamed Fouad - Full Stack Developer Portfolio",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mohamed Fouad | MERN Stack Developer",
-    description: "Passionate MERN Stack Developer specializing in React.js, Next.js, and TypeScript. Building exceptional user experiences.",
+    title: "Mohamed Fouad | Full Stack Developer",
+    description: "Full Stack Developer specializing in MERN stack, Next.js, and TypeScript. Architecting exceptional web applications with modern technologies.",
     creator: "@Mo_fouad0",
     images: ["/og-image.png"],
   },
@@ -61,7 +61,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Mohamed Fouad",
-    jobTitle: "MERN Stack Developer",
+    jobTitle: "Full Stack Developer",
     worksFor: {
       "@type": "Organization",
       name: "GTS"

@@ -9,7 +9,7 @@ import Link from 'next/link';
 
 export const HeroSection = () => {
   return (
-    <div className='py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip'>
+    <div id="home" className='py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip'>
       {/*  */}
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
       <div className="absolute -z-30 inset-0 opacity-5" style={{backgroundImage : `url(${grianImage.src})`}}></div>
@@ -65,10 +65,11 @@ export const HeroSection = () => {
         {/* heading */}
         <div className="max-w-lg mx-auto">
           <h1 className='font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide'>Mohamed Fouad</h1>
-          <h2 className='font-serif text-xl md:text-2xl text-center mt-4 text-emerald-300'>MERN Stack Developer at GTS</h2>
+          <h2 className='font-serif text-xl md:text-2xl text-center mt-4 text-emerald-300'>Full Stack Developer at GTS</h2>
           <p className='mt-4 text-center text-white/60 md:text-lg'>
-            Based in Riyadh, Saudi Arabia. I specialize in transforming designs into functional, high-performing
-            web applications using React.js, Next.js, and TypeScript. Let's discuss your next project.
+            Based in Riyadh, Saudi Arabia. Specialized in architecting and delivering scalable, high-performance
+            web applications using the MERN stack. Transforming innovative ideas into exceptional digital experiences
+            with modern technologies and best practices. Let's collaborate on your next project.
           </p>
         </div>
         {/*---------- heading ---------------*/}
