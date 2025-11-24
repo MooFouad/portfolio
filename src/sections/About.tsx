@@ -19,6 +19,10 @@ import { IoLogoFirebase } from "react-icons/io5";
 import { IoIosGitBranch } from "react-icons/io";
 import { FaGithub } from "react-icons/fa";
 import { RiNextjsLine } from "react-icons/ri";
+import { FaNodeJs } from "react-icons/fa";
+import { SiExpress } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
+import { SiPostman } from "react-icons/si";
 import mapImage from "@/assets/images/map.png"
 import smileMemoji from "@/assets/images/memoji-smile.png"
 import CardHeader from "@/components/CardHeader";
@@ -87,6 +91,22 @@ const toolboxItem = [
   {
     title : "Github",
     icon : < FaGithub />,
+  },
+  {
+    title : "Node.js",
+    icon : < FaNodeJs />,
+  },
+  {
+    title : "Express.js",
+    icon : < SiExpress />,
+  },
+  {
+    title : "MongoDB",
+    icon : < SiMongodb />,
+  },
+  {
+    title : "Postman",
+    icon : < SiPostman />,
   },
 ]
 const hobbies = [
