@@ -65,11 +65,11 @@ export const HeroSection = () => {
         {/* heading */}
         <div className="max-w-lg mx-auto">
           <h1 className='font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide'>Mohamed Fouad</h1>
-          <h2 className='font-serif text-xl md:text-2xl text-center mt-4 text-emerald-300'>Full Stack Developer at GTS</h2>
+          <h2 className='font-serif text-xl md:text-2xl text-center mt-4 text-emerald-300'>Front End Developer | MERN Stack Developer</h2>
           <p className='mt-4 text-center text-white/60 md:text-lg'>
-            Based in Riyadh, Saudi Arabia. Specialized in architecting and delivering scalable, high-performance
-            web applications using the MERN stack. Transforming innovative ideas into exceptional digital experiences
-            with modern technologies and best practices. Let's collaborate on your next project.
+            Based in Riyadh, Saudi Arabia. Front-End Developer with 2+ years of experience in React.js, Next.js, and TypeScript.
+            Proven track record building full-stack MERN applications that automate business processes and improve operational efficiency.
+            Reduced manual workload by 60% through development of internal management systems serving 200+ users.
           </p>
         </div>
         {/*---------- heading ---------------*/}
@@ -81,7 +81,7 @@ export const HeroSection = () => {
               <ArrowDown className="size-4" />
             </button>
           </Link>
-          <Link href="https://www.linkedin.com/in/mohamed-fouad-6426231a5/" target='_blank' className='hover:cursor-pointer z-50'>
+          <Link href="https://www.linkedin.com/in/mofouad001/" target='_blank' className='hover:cursor-pointer z-50'>
           <button className='inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl '>
             <span>👋</span>
             <span className='font-semibold'>Let's Connect</span>

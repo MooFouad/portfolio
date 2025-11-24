@@ -23,7 +23,7 @@ export const ContactSection = () => {
               </p>
               <p className="text-sm md:text-base font-semibold flex items-center gap-2">
                 <span>📞</span>
-                <span>+966 50 367 1924</span>
+                <span>+966 50 523 2544</span>
               </p>
               <p className="text-sm md:text-base font-semibold flex items-center gap-2">
                 <span>📍</span>
