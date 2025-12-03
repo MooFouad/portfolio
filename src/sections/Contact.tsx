@@ -32,7 +32,7 @@ export const ContactSection = () => {
             </div>
           </div>
           <div className="">
-            <a href="mailto:mofouad001@gmail.com" className="text-white bg-gray-900 inline-flex h-12 px-6 items-center rounded-xl gap-2 w-max border border-gray-950 hover:bg-gray-800 transition-colors whitespace-nowrap">
+            <a href="https://wa.me/966505232544" target="_blank" rel="noopener noreferrer" className="text-white bg-gray-900 inline-flex h-12 px-6 items-center rounded-xl gap-2 w-max border border-gray-950 hover:bg-gray-800 transition-colors whitespace-nowrap">
               <span className="font-semibold">Get In Touch</span>
               <ArrowUpRightIcon className="size-4" />
             </a>
