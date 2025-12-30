@@ -72,10 +72,10 @@ export default function RootLayout({
       addressCountry: "Saudi Arabia"
     },
     email: "mofouad001@gmail.com",
-    telephone: "+966503671924",
+    telephone: "+966505232544",
     url: "https://moofouad.github.io/portfolio",
     sameAs: [
-      "https://www.linkedin.com/in/mohamed-fouad-6426231a5/",
+      "https://www.linkedin.com/in/mohamed-fouad001",
       "https://github.com/MooFouad",
       "https://x.com/Mo_fouad0"
     ],

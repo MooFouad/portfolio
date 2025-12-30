@@ -4,7 +4,7 @@ export const Footer = () => {
   const footerLinks=[
     {
       title: "LinkedIn",
-      href: "https://www.linkedin.com/in/mofouad001/"
+      href: "https://www.linkedin.com/in/mohamed-fouad001"
     },
     {
       title: "Github",
