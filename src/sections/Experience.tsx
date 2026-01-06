@@ -22,25 +22,37 @@ export const ExperienceSection = () => {
               <div className="border-l-4 border-emerald-300 pl-4 hover:border-l-8 transition-all duration-300">
                 <h3 className="font-semibold text-xl">Front End Developer</h3>
                 <p className="text-emerald-300 text-sm font-medium mt-1">GTS (German Technical Service) • Jan 2025 - Present</p>
-                <p className="text-white/70 text-sm mt-3 leading-relaxed mb-3">
-                  Developing full-stack MERN applications serving 200+ employees, reducing manual workload by 60%.
-                </p>
-                <ul className="text-white/70 text-sm space-y-2 list-disc list-inside">
-                  <li>Built Vehicle Periodic Inspection Management System with automated email notifications and real-time alerts, preventing 95% of missed renewals</li>
-                  <li>Created Integrated Management Platform for social insurance, apartment rentals, and utility bills with MongoDB database architecture</li>
-                  <li>Developed AI-powered chatbot using OpenAI API for employee inquiries, reducing HR response time by 70%</li>
-                  <li>Implemented responsive interfaces using React.js, Next.js, Node.js, Express.js, and MongoDB</li>
-                  <li>Conduct code reviews and optimize application performance following best practices</li>
-                  <li>Collaborate with cross-functional teams including HR and operations to deliver tailored solutions</li>
+                <ul className="text-white/70 text-sm space-y-2 list-disc list-inside mt-3">
+                  <li>Develop and maintain responsive web applications using React.js, Next.js, and TypeScript</li>
+                  <li>Build cross-browser compatible interfaces with modern CSS frameworks, ensuring optimal performance</li>
+                  <li>Integrate RESTful APIs for seamless data flow and real-time content updates</li>
+                  <li>Conduct code reviews, ensuring adherence to best practices, and maintain code quality standards</li>
+                  <li>Optimize application performance using React best practices and browser development tools</li>
+                  <li>Collaborate with cross-functional teams to deliver high-quality products meeting business requirements</li>
                 </ul>
                 <div className="mt-3 flex flex-wrap gap-2">
                   <span className="text-xs px-2 py-1 bg-emerald-300/10 text-emerald-300 rounded">React.js</span>
                   <span className="text-xs px-2 py-1 bg-emerald-300/10 text-emerald-300 rounded">Next.js</span>
                   <span className="text-xs px-2 py-1 bg-emerald-300/10 text-emerald-300 rounded">TypeScript</span>
-                  <span className="text-xs px-2 py-1 bg-emerald-300/10 text-emerald-300 rounded">Node.js</span>
-                  <span className="text-xs px-2 py-1 bg-emerald-300/10 text-emerald-300 rounded">Express.js</span>
-                  <span className="text-xs px-2 py-1 bg-emerald-300/10 text-emerald-300 rounded">MongoDB</span>
-                  <span className="text-xs px-2 py-1 bg-emerald-300/10 text-emerald-300 rounded">OpenAI API</span>
+                  <span className="text-xs px-2 py-1 bg-emerald-300/10 text-emerald-300 rounded">RESTful API</span>
+                </div>
+              </div>
+
+              <div className="border-l-4 border-sky-400 pl-4 hover:border-l-8 transition-all duration-300">
+                <h3 className="font-semibold text-xl">Front End Developer</h3>
+                <p className="text-sky-400 text-sm font-medium mt-1">Relvecrop • Oct 2023 - Dec 2024</p>
+                <ul className="text-white/70 text-sm space-y-2 list-disc list-inside mt-3">
+                  <li>Developing a football cards game using Next.js, focusing on a seamless and engaging user experience</li>
+                  <li>Implementing responsive and user-friendly interfaces to enhance player interaction</li>
+                  <li>Collaborating with cross-functional teams to integrate APIs and dynamic content</li>
+                  <li>Conducting code reviews, optimizing performance, and adhering to best practices</li>
+                  <li>Ensuring the technical feasibility of UI/UX designs and maintaining high code quality</li>
+                </ul>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  <span className="text-xs px-2 py-1 bg-sky-400/10 text-sky-400 rounded">Next.js</span>
+                  <span className="text-xs px-2 py-1 bg-sky-400/10 text-sky-400 rounded">React.js</span>
+                  <span className="text-xs px-2 py-1 bg-sky-400/10 text-sky-400 rounded">TypeScript</span>
+                  <span className="text-xs px-2 py-1 bg-sky-400/10 text-sky-400 rounded">API Integration</span>
                 </div>
               </div>
             </div>
