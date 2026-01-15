@@ -1,0 +1,6 @@
+{
+  "cursor.cmdk.autoSelect": true,
+  "cursor.composer.shouldAutoScrollToBottom": true,
+  "prettier.enable": true,
+  "prettier.endOfLine": "auto"
+}
