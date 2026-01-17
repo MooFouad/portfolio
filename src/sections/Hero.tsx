@@ -11,7 +11,7 @@ export const HeroSection = () => {
   return (
     <div id="home" className='py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip'>
       {/*  */}
-      <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
+      <div className="absolute inset-0 pointer-events-none [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
       <div className="absolute -z-30 inset-0 opacity-5" style={{backgroundImage : `url(${grianImage.src})`}}></div>
       {/*-----  -----*/}
       {/* hero rings */}
@@ -63,13 +63,11 @@ export const HeroSection = () => {
         </div>
         {/* img container */}
         {/* heading */}
-        <div className="max-w-lg mx-auto">
+        <div className="max-w-xl mx-auto">
           <h1 className='font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide'>Mohamed Fouad</h1>
           <h2 className='font-serif text-xl md:text-2xl text-center mt-4 text-emerald-300'>Front End Developer | MERN Stack Developer</h2>
           <p className='mt-4 text-center text-white/60 md:text-lg'>
-            Based in Riyadh, Saudi Arabia. Front-End Developer with 2+ years of experience in React.js, Next.js, and TypeScript.
-            Proven track record building full-stack MERN applications that automate business processes and improve operational efficiency.
-            Reduced manual workload by 60% through development of internal management systems serving 200+ users.
+            Frontend Developer based in Saudi Arabia with 2+ years of experience specializing in React.js, Next.js, and TypeScript. I build high-performance, scalable web applications focused on clean architecture, optimal performance, and real-world business impact.
           </p>
         </div>
         {/*---------- heading ---------------*/}

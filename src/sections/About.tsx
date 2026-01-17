@@ -31,7 +31,8 @@ import { motion } from "framer-motion";
 import {useRef} from 'react';
 
 
-const toolboxItem = [
+// Frontend Skills - Row 1
+const frontendSkills = [
   {
     title : "HTML5",
     icon : < FaHtml5 />,
@@ -80,18 +81,10 @@ const toolboxItem = [
     title : "Sass",
     icon : < FaSass />,
   },
-  {
-    title : "Firebase",
-    icon : < IoLogoFirebase />,
-  },
-  {
-    title : "Git",
-    icon : < IoIosGitBranch />,
-  },
-  {
-    title : "Github",
-    icon : < FaGithub />,
-  },
+]
+
+// Backend Skills - Row 2
+const backendSkills = [
   {
     title : "Node.js",
     icon : < FaNodeJs />,
@@ -105,8 +98,20 @@ const toolboxItem = [
     icon : < SiMongodb />,
   },
   {
+    title : "Firebase",
+    icon : < IoLogoFirebase />,
+  },
+  {
     title : "Postman",
     icon : < SiPostman />,
+  },
+  {
+    title : "Git",
+    icon : < IoIosGitBranch />,
+  },
+  {
+    title : "Github",
+    icon : < FaGithub />,
   },
 ]
 const hobbies = [
@@ -175,8 +180,8 @@ export const AboutSection = () => {
             description="The cutting-edge technologies and frameworks I leverage to build exceptional digital solutions."
             className="px-6 pt-6"
           />  
-        <ToolboxItems items={toolboxItem} className="" itemsWrapperClassName="animate-move-left [animation-duration:30s]" />
-        <ToolboxItems items={toolboxItem} className="mt-6" itemsWrapperClassName="-translate-x-1/2 animate-move-right [animation-duration:25s]" />
+        <ToolboxItems items={frontendSkills} className="" itemsWrapperClassName="animate-move-left [animation-duration:30s]" />
+        <ToolboxItems items={backendSkills} className="mt-6" itemsWrapperClassName="-translate-x-1/2 animate-move-right [animation-duration:25s]" />
         </Card>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-3 gap-8">
