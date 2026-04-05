@@ -67,7 +67,7 @@ export const HeroSection = () => {
           <h1 className='font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide'>Mohamed Fouad</h1>
           <h2 className='font-serif text-xl md:text-2xl text-center mt-4 text-emerald-300'>Front End Developer | MERN Stack Developer</h2>
           <p className='mt-4 text-center text-white/60 md:text-lg'>
-            Frontend Developer based in Saudi Arabia with 2+ years of experience specializing in React.js, Next.js, and TypeScript. I build high-performance, scalable web applications focused on clean architecture, optimal performance, and real-world business impact.
+            Frontend Developer based in Saudi Arabia with 3+ years of experience specializing in React.js, Next.js, and TypeScript. I build high-performance, scalable web applications focused on clean architecture, optimal performance, and real-world business impact.
           </p>
         </div>
         {/*---------- heading ---------------*/}
@@ -79,6 +79,16 @@ export const HeroSection = () => {
               <ArrowDown className="size-4" />
             </button>
           </Link>
+          <a
+            href="/Mohamed_Fouad_CV.pdf"
+            download
+            target="_blank"
+            rel="noopener noreferrer"
+            className='hover:cursor-pointer z-50 inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl font-semibold'
+          >
+            <span>📄</span>
+            <span>Download CV</span>
+          </a>
           <Link href="https://www.linkedin.com/in/mohamed-fouad001" target='_blank' className='hover:cursor-pointer z-50'>
           <button className='inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl '>
             <span>👋</span>
