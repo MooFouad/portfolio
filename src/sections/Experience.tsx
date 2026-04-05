@@ -20,33 +20,34 @@ export const ExperienceSection = () => {
             />
             <div className="mt-6 space-y-6">
               <div className="border-l-4 border-emerald-300 pl-4 hover:border-l-8 transition-all duration-300">
-                <h3 className="font-semibold text-xl">Front End Developer</h3>
-                <p className="text-emerald-300 text-sm font-medium mt-1">GTS (German Technical Service) • Jan 2025 - Present</p>
+                <h3 className="font-semibold text-xl">Front-End Developer</h3>
+                <p className="text-emerald-300 text-sm font-medium mt-1">GTS (German Technical Service) • Mar 2025 – Present</p>
                 <ul className="text-white/70 text-sm space-y-2 list-disc list-inside mt-3">
-                  <li>Develop and maintain responsive web applications using React.js, Next.js, and TypeScript</li>
-                  <li>Build cross-browser compatible interfaces with modern CSS frameworks, ensuring optimal performance</li>
-                  <li>Integrate RESTful APIs for seamless data flow and real-time content updates</li>
-                  <li>Conduct code reviews, ensuring adherence to best practices, and maintain code quality standards</li>
-                  <li>Optimize application performance using React best practices and browser development tools</li>
-                  <li>Collaborate with cross-functional teams to deliver high-quality products meeting business requirements</li>
+                  <li>Built a full-stack compliance management dashboard (React.js, Node.js, Express, MongoDB) for vehicle tracking, GOSI, rentals, and utilities</li>
+                  <li>Integrated with Saudi Absher government services for real-time vehicle registration data, improving data accuracy</li>
+                  <li>Implemented role-based authentication and automated notification workflows (Web Push API) for document expiration alerts</li>
+                  <li>Built Excel bulk import/export functionality to streamline large-scale data management</li>
+                  <li>Developed an internal AI chatbot connected to company databases for employee FAQs with real-time responses</li>
+                  <li>Built automated email-to-form workflows with keyword triggers, routing submissions directly to HR</li>
+                  <li>Optimized frontend performance via code splitting and lazy loading; ensured cross-browser compatibility</li>
+                  <li>Collaborated with product, backend, and operations teams to deliver business-aligned solutions</li>
                 </ul>
                 <div className="mt-3 flex flex-wrap gap-2">
                   <span className="text-xs px-2 py-1 bg-emerald-300/10 text-emerald-300 rounded">React.js</span>
-                  <span className="text-xs px-2 py-1 bg-emerald-300/10 text-emerald-300 rounded">Next.js</span>
+                  <span className="text-xs px-2 py-1 bg-emerald-300/10 text-emerald-300 rounded">Node.js</span>
+                  <span className="text-xs px-2 py-1 bg-emerald-300/10 text-emerald-300 rounded">MongoDB</span>
                   <span className="text-xs px-2 py-1 bg-emerald-300/10 text-emerald-300 rounded">TypeScript</span>
-                  <span className="text-xs px-2 py-1 bg-emerald-300/10 text-emerald-300 rounded">RESTful API</span>
+                  <span className="text-xs px-2 py-1 bg-emerald-300/10 text-emerald-300 rounded">Web Push API</span>
                 </div>
               </div>
 
               <div className="border-l-4 border-sky-400 pl-4 hover:border-l-8 transition-all duration-300">
                 <h3 className="font-semibold text-xl">Front End Developer</h3>
-                <p className="text-sky-400 text-sm font-medium mt-1">Relvecrop • Oct 2023 - Dec 2024</p>
+                <p className="text-sky-400 text-sm font-medium mt-1">Relvecrop • Jan 2024 – Jan 2025</p>
                 <ul className="text-white/70 text-sm space-y-2 list-disc list-inside mt-3">
-                  <li>Developing a football cards game using Next.js, focusing on a seamless and engaging user experience</li>
-                  <li>Implementing responsive and user-friendly interfaces to enhance player interaction</li>
-                  <li>Collaborating with cross-functional teams to integrate APIs and dynamic content</li>
-                  <li>Conducting code reviews, optimizing performance, and adhering to best practices</li>
-                  <li>Ensuring the technical feasibility of UI/UX designs and maintaining high code quality</li>
+                  <li>Developed a football cards game using Next.js, focusing on seamless and engaging user experience</li>
+                  <li>Implemented responsive interfaces and collaborated with cross-functional teams to integrate APIs</li>
+                  <li>Conducted code reviews, optimized performance, and ensured technical feasibility of UI/UX designs</li>
                 </ul>
                 <div className="mt-3 flex flex-wrap gap-2">
                   <span className="text-xs px-2 py-1 bg-sky-400/10 text-sky-400 rounded">Next.js</span>

@@ -14,13 +14,25 @@ import Card from "@/components/Card";
 const portfolioProjects = [
   {
     company: "GTS",
-    title: "GTS Dashboard",
+    title: "GTS Compliance Dashboard",
     link: "https://dashboard-sys-d.vercel.app/",
     image: gtsImage,
     results: [
-      { title: "Built with MERN Stack (MongoDB, Express, React, Node.js)" },
-      { title: "Full-stack dashboard with real-time data management" },
-      { title: "RESTful API with secure authentication" },
+      { title: "Full-stack compliance system for vehicle tracking, GOSI, rentals & utilities (MERN Stack)" },
+      { title: "Integrated Saudi Absher government API for real-time vehicle registration data" },
+      { title: "Role-based auth + Web Push API for automated document expiry alerts" },
+      { title: "Excel bulk import/export and email-to-form automation workflows" },
+    ],
+  },
+  {
+    company: "GTS",
+    title: "GTS AI Chatbot",
+    link: "https://dashboard-sys-d.vercel.app/",
+    image: gtsImage,
+    results: [
+      { title: "AI-powered chatbot serving 200+ employees for company policies and FAQs" },
+      { title: "Connected to company database for real-time data: leave balances, HR policies" },
+      { title: "Built with React.js, Node.js, and MongoDB — internal enterprise tool" },
     ],
   },
   {

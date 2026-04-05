@@ -23,6 +23,9 @@ import { FaNodeJs } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 import { SiPostman } from "react-icons/si";
+import { SiJest } from "react-icons/si";
+import { FaKey } from "react-icons/fa";
+import { TbApi } from "react-icons/tb";
 import mapImage from "@/assets/images/map.png"
 import smileMemoji from "@/assets/images/memoji-smile.png"
 import CardHeader from "@/components/CardHeader";
@@ -112,6 +115,18 @@ const backendSkills = [
   {
     title : "Github",
     icon : < FaGithub />,
+  },
+  {
+    title : "Jest",
+    icon : < SiJest />,
+  },
+  {
+    title : "JWT Auth",
+    icon : < FaKey />,
+  },
+  {
+    title : "REST API",
+    icon : < TbApi />,
   },
 ]
 const hobbies = [

@@ -8,7 +8,7 @@ const calistoga = Calistoga({subsets:['latin'], variable: '--font-serif', weight
 
 export const metadata: Metadata = {
   title: "Mohamed Fouad | Full Stack Developer | MERN Stack Expert",
-  description: "Experienced Full Stack Developer specializing in the MERN stack (MongoDB, Express.js, React.js, Node.js), Next.js, and TypeScript. Currently working at GTS in Riyadh, Saudi Arabia. Expert in architecting scalable web applications with exceptional performance, SEO optimization, and modern UI/UX design.",
+  description: "Frontend Developer with 3+ years of experience specializing in React.js, Next.js, and TypeScript. Currently building compliance systems, AI chatbots, and enterprise tools at GTS in Riyadh, Saudi Arabia. Expert in clean architecture, performance optimization, and real-world business impact.",
   keywords: ["Mohamed Fouad", "Full Stack Developer", "MERN Stack Developer", "React.js Developer", "Next.js Developer", "Node.js Developer", "TypeScript Developer", "MongoDB Developer", "Web Developer Riyadh", "GTS Developer", "JavaScript Developer", "Full Stack Engineer Saudi Arabia", "Software Engineer"],
   authors: [{ name: "Mohamed Fouad", url: "https://github.com/MooFouad" }],
   creator: "Mohamed Fouad",
