@@ -14,7 +14,7 @@ import Card from "@/components/Card";
 const portfolioProjects = [
   {
     company: "GTS",
-    title: "GTS Compliance Dashboard",
+    title: "GTS Dashboard",
     link: "https://dashboard-sys-d.vercel.app/",
     image: gtsImage,
     results: [
@@ -22,17 +22,6 @@ const portfolioProjects = [
       { title: "Integrated Saudi Absher government API for real-time vehicle registration data" },
       { title: "Role-based auth + Web Push API for automated document expiry alerts" },
       { title: "Excel bulk import/export and email-to-form automation workflows" },
-    ],
-  },
-  {
-    company: "GTS",
-    title: "GTS AI Chatbot",
-    link: "https://dashboard-sys-d.vercel.app/",
-    image: gtsImage,
-    results: [
-      { title: "AI-powered chatbot serving 200+ employees for company policies and FAQs" },
-      { title: "Connected to company database for real-time data: leave balances, HR policies" },
-      { title: "Built with React.js, Node.js, and MongoDB — internal enterprise tool" },
     ],
   },
   {
