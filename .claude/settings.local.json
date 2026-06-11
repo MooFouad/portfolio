@@ -9,7 +9,8 @@
       "Bash(git branch:*)",
       "Bash(git push:*)",
       "Bash(git pull:*)",
-      "Bash(git checkout:*)"
+      "Bash(git checkout:*)",
+      "Bash(cp /root/.claude/uploads/076dc022-1f2e-5cd8-bf66-d670e3ecbddf/dcbc9394-Mohamed_Fouad_CV.pdf /home/user/portfolio/public/Mohamed_Fouad_CV.pdf && ls -lh /home/user/portfolio/public/Mohamed_Fouad_CV.pdf)"
     ]
   }
 }
