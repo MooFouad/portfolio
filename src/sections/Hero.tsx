@@ -73,27 +73,22 @@ export const HeroSection = () => {
         {/*---------- heading ---------------*/}
         {/* btn container */}
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <Link href="/#projects" className='hover:cursor-pointer z-50'>
-            <button className='inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl'>
-              <span className='font-semibold'>Explore My Work</span>
-              <ArrowDown className="size-4" />
-            </button>
-          </Link>
           <a
             href="/Mohamed_Fouad_CV.pdf"
             download
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Download CV as PDF"
             className='hover:cursor-pointer z-50 inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl font-semibold'
           >
-            <span>📄</span>
+            <ArrowDown className="size-4" />
             <span>Download CV</span>
           </a>
           <Link href="https://www.linkedin.com/in/mohamed-fouad001" target='_blank' className='hover:cursor-pointer z-50'>
-          <button className='inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl '>
-            <span>👋</span>
-            <span className='font-semibold'>Let's Connect</span>
-          </button>
+            <button aria-label="Connect on LinkedIn" className='inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl '>
+              <span>👋</span>
+              <span className='font-semibold'>Let's Connect</span>
+            </button>
           </Link>
         </div>
         {/*---------- btn container ----------*/}

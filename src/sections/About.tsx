@@ -183,11 +183,21 @@ export const AboutSection = () => {
         <Card className="h-[320px] md:col-span-2 lg:col-span-1">
           <CardHeader
             title="Continuous Learning"
-            description="Books and resources that inspire my professional growth."
-          />       
-        <div className="w-40 mx-auto mt-2 md:-mt-0">
-          <Image src={bookImage} alt="book image" />
-        </div>
+            description="Always expanding beyond the day job."
+          />
+          <div className="px-6 pb-4 flex flex-col gap-3">
+            <p className="text-white/60 text-sm leading-relaxed">
+              Currently deepening expertise in system design, AI integration patterns, and web performance engineering.
+            </p>
+            <ul className="space-y-1.5 text-sm text-white/70">
+              <li className="flex items-center gap-2"><span className="text-emerald-300">→</span> System Design & Architecture</li>
+              <li className="flex items-center gap-2"><span className="text-emerald-300">→</span> AI / LLM Integration</li>
+              <li className="flex items-center gap-2"><span className="text-emerald-300">→</span> Web Performance Engineering</li>
+            </ul>
+          </div>
+          <div className="w-28 mx-auto">
+            <Image src={bookImage} alt="Learning resources" />
+          </div>
         </Card>
         <Card className="h-[320px] p-0 md:col-span-3 lg:col-span-2">
           <CardHeader

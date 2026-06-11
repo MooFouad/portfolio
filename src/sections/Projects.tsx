@@ -15,6 +15,7 @@ const portfolioProjects = [
   {
     company: "GTS",
     title: "GTS Dashboard",
+    description: "An internal compliance platform managing vehicles, GOSI registrations, rentals, and utilities for a Saudi transport company — integrated with government APIs.",
     link: "https://dashboard-sys-d.vercel.app/",
     image: gtsImage,
     results: [
@@ -27,6 +28,7 @@ const portfolioProjects = [
   {
     company: "ShopEase",
     title: "Shopper Ecommerce",
+    description: "A full e-commerce experience with product browsing, cart management, and checkout flow built with React and Tailwind CSS.",
     link: "https://shopper-ecommerce-two.vercel.app/",
     image: shopperEcommerceImage,
     results: [
@@ -38,6 +40,7 @@ const portfolioProjects = [
   {
     company: "DataSync",
     title: "Admin Dashboard",
+    description: "A data management interface featuring interactive charts, analytics panels, and product/order administration powered by Syncfusion components.",
     link: "https://dashboard-one-teal.vercel.app/",
     image: adminDashboardImage,
     results: [
@@ -49,6 +52,7 @@ const portfolioProjects = [
   {
     company: "CryptoWatch",
     title: "Crypto Tracker",
+    description: "A real-time cryptocurrency tracker with live price feeds, interactive market charts, and coin detail pages via public crypto APIs.",
     link: "https://beautiful-muffin-45a42f.netlify.app/",
     image: cryptoTrackerImage,
     results: [
@@ -60,6 +64,7 @@ const portfolioProjects = [
   {
     company: "StreamFlix",
     title: "Disney Clone",
+    description: "A streaming platform UI clone with content browsing, Firebase authentication, and user watchlists modelled on the Disney+ experience.",
     link: "https://effortless-melomakarona-828453.netlify.app/",
     image: disneyCloneImage,
     results: [
@@ -71,6 +76,7 @@ const portfolioProjects = [
   {
     company: "VidStream",
     title: "YouTube Clone",
+    description: "A video platform interface with RapidAPI-powered search, video playback, channel pages, and a fully responsive layout.",
     link: "https://classy-griffin-bde964.netlify.app/",
     image: youtubeCloneImage,
     results: [
@@ -107,6 +113,9 @@ export const ProjectsSection = () => {
                   <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">
                     {project.title}
                   </h3>
+                  <p className="text-white/60 text-sm md:text-base mt-2 md:mt-3">
+                    {project.description}
+                  </p>
                   <hr className="border-t-2 border-white/10 mt-4 md:mt-5" />
                   <ul className="flex flex-col gap-4 mt-4 md:mt-5">
                     {project.results.map((result) => (

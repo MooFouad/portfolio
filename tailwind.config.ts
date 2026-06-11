@@ -39,7 +39,7 @@ const config: Config = {
         },
         'move-left':{
           '0%': {
-            traansform: 'translateX(0)',
+            transform: 'translateX(0)',
           },
           '100%': {
             transform: 'translateX(-50%)',
@@ -47,7 +47,7 @@ const config: Config = {
         },
         'move-right':{
           '0%': {
-            traansform: 'translateX(-50%)',
+            transform: 'translateX(-50%)',
           },
           '100%': {
             transform: 'translateX(0%)',
