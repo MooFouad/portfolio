@@ -1,84 +1,57 @@
-import memojiAvatar1 from "@/assets/images/memoji-avatar-1.png";
-import memojiAvatar2 from "@/assets/images/memoji-avatar-2.png";
-import memojiAvatar3 from "@/assets/images/memoji-avatar-3.png";
-import memojiAvatar4 from "@/assets/images/memoji-avatar-4.png";
-import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
 import SectionHeader from "@/components/SectionHeader";
-import Image from "next/image";
-import grainImage from '@/assets/images/grain.jpg';
 import Card from "@/components/Card";
-import { Fragment } from "react";
+import { HiOutlineCode, HiOutlineLightningBolt, HiOutlineUsers, HiOutlineChartBar } from "react-icons/hi";
 
-const testimonials = [
+const approaches = [
   {
-    name: "Alex Turner",
-    position: "Marketing Manager @ TechStartups",
-    text: "Mohamed was instrumental in transforming our website into a powerful marketing tool. His attention to detail and ability to understand our brand is exceptional. We're thrilled with the results!",
-    avatar: memojiAvatar1,
+    icon: HiOutlineCode,
+    title: "Ship-Ready Code",
+    description:
+      "I build for production from day one — clean architecture, TypeScript-strict, and maintainable patterns that scale as the product grows without accumulating debt.",
   },
   {
-    name: "Olivia Green",
-    position: "Head of Design @ GreenLeaf",
-    text: "Working with Mohamed was a pleasure. His expertise in frontend development brought our designs to life in a way we never imagined. The website has exceeded our expectations.",
-    avatar: memojiAvatar2,
+    icon: HiOutlineUsers,
+    title: "End-to-End Ownership",
+    description:
+      "From database schema to pixel-perfect UI, I take full ownership of a feature and collaborate closely with design, backend, and product teams to deliver aligned solutions.",
   },
   {
-    name: "Daniel White",
-    position: "CEO @ InnovateCo",
-    text: "Mohamed's ability to create seamless user experiences is unmatched. Our website has seen a significant increase in conversions since launching the new design. We couldn't be happier.",
-    avatar: memojiAvatar3,
+    icon: HiOutlineLightningBolt,
+    title: "Performance by Default",
+    description:
+      "I optimize as I build — code splitting, lazy loading, caching strategies — so performance is never a late-stage retrofit but a first-class concern throughout development.",
   },
   {
-    name: "Emily Carter",
-    position: "Product Manager @ GlobalTech",
-    text: "Mohamed is a true frontend wizard. He took our complex product and transformed it into an intuitive and engaging user interface. We're already seeing positive feedback from our customers.",
-    avatar: memojiAvatar4,
-  },
-  {
-    name: "Michael Brown",
-    position: "Director of IT @ MegaCorp",
-    text: "Mohamed's work on our website has been nothing short of exceptional. He's a talented developer who is also a great communicator. We highly recommend him.",
-    avatar: memojiAvatar5,
+    icon: HiOutlineChartBar,
+    title: "Business-Impact Focus",
+    description:
+      "I connect engineering decisions to business outcomes. Whether it's reducing load time, automating a workflow, or improving data accuracy, I measure what matters.",
   },
 ];
 
 export const TestimonialsSection = () => {
-  return <div className="py-16 lg:py-20">
-    <div className="container">
-    <SectionHeader 
-        eyebrow="Happy Clients"
-        title="What Clients Say about me"
-        description="Don't just take my word for it. See  what my clients have to say about work."
-      />
-    <div className="mt-12 lg:mt-20 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] py-4 -my-4">
-      <div className="flex gap-8 pr-8 flex-none animate-move-left [animation-duration:80s] hover:[animation-play-state:paused]">
-      {...new Array(2).fill(null).map((_, index) => (
-        <Fragment key={index}>
-        {
-          testimonials.map(testimonial => (
-            <Card key={testimonial.name} className="max-w-xs p-6 md:p-8 md:max-w-md hover:-rotate-3 transtion duration-300">
-              <div className="flex justify-center items-center gap-4">
-                <div className="size-14 bg-gray-700 inline-flex rounded-full items-center justify-center flex-shrink-0">
-                  <Image src={testimonial.avatar} alt={testimonial.name} className="max-h-full" />
-                </div>
-                <div className="">
-                  <div className="font-semibold">
-                    {testimonial.name}
-                  </div>
-                  <div className="text-sm text-white/40">
-                    {testimonial.position}
-                  </div>
-                </div>
+  return (
+    <div className="py-16 lg:py-24">
+      <div className="container">
+        <SectionHeader
+          eyebrow="How I Work"
+          title="My Approach"
+          description="The principles that guide how I design, build, and deliver software."
+        />
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+          {approaches.map((item) => (
+            <Card key={item.title} className="p-6 md:p-8 flex flex-col gap-4">
+              <div className="size-12 rounded-xl bg-gradient-to-br from-emerald-300 to-sky-400 flex items-center justify-center flex-shrink-0">
+                <item.icon className="size-6 text-gray-900" aria-hidden="true" />
               </div>
-              <p className="mt-4 md:mt-6 text-sm md:text-base">
-              {testimonial.text}
-              </p>
+              <div>
+                <h3 className="font-semibold text-lg">{item.title}</h3>
+                <p className="text-white/60 text-sm mt-2 leading-relaxed">{item.description}</p>
+              </div>
             </Card>
           ))}
-        </Fragment>
-      ))}
-      </div>
+        </div>
       </div>
     </div>
-  </div>;
+  );
 };

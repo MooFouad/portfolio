@@ -46,6 +46,7 @@ export const Header = () => {
           <a
             key={item.id}
             href={item.href}
+            aria-current={activeSection === item.id ? "page" : undefined}
             className={`nav-item transition-all duration-300 ${
               activeSection === item.id
                 ? "bg-white text-gray-900"

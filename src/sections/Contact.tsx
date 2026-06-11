@@ -1,6 +1,7 @@
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg"
 import grinImage from "@/assets/images/grain.jpg"
 import Image from "next/image";
+import { HiOutlineMail, HiOutlinePhone, HiOutlineLocationMarker } from "react-icons/hi";
 
 export const ContactSection = () => {
   return <div id="contact" className="py-16 pt-14 lg:py-24 lg:pt-20">
@@ -18,15 +19,15 @@ export const ContactSection = () => {
             </p>
             <div className="mt-4 space-y-2">
               <p className="text-sm md:text-base font-semibold flex items-center gap-2">
-                <span>📧</span>
+                <HiOutlineMail className="size-5 flex-shrink-0" aria-hidden="true" />
                 <span>mofouad001@gmail.com</span>
               </p>
               <p className="text-sm md:text-base font-semibold flex items-center gap-2">
-                <span>📞</span>
+                <HiOutlinePhone className="size-5 flex-shrink-0" aria-hidden="true" />
                 <span>+966 50 523 2544</span>
               </p>
               <p className="text-sm md:text-base font-semibold flex items-center gap-2">
-                <span>📍</span>
+                <HiOutlineLocationMarker className="size-5 flex-shrink-0" aria-hidden="true" />
                 <span>Riyadh, Saudi Arabia</span>
               </p>
             </div>
