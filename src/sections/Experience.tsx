@@ -59,7 +59,7 @@ export const ExperienceSection = () => {
           <Card className="p-6 md:p-8 md:col-span-2">
             <h3 className="font-serif text-2xl">Education</h3>
             <div className="mt-6 border-l-4 border-emerald-300 pl-4">
-              <h4 className="font-semibold text-lg">BSc Computer Science</h4>
+              <h4 className="font-semibold text-lg">Bachelor of Computer Science</h4>
               <p className="text-emerald-300 text-xs font-medium mt-0.5">2018 – 2022</p>
               <p className="text-white/50 text-sm mt-0.5">Menoufia University, Egypt</p>
             </div>

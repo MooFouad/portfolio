@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "framer-motion";
 import daftaarImage from "@/assets/images/daftaarImage.png";
 import intranetImage from "@/assets/images/intranetPreview.png";
 import trackingImage from "@/assets/images/trackingPreview.png";
@@ -171,24 +173,36 @@ export const ProjectsSection = () => {
           title="Featured Projects"
           description="Production systems in daily use, a commercial SaaS I run, and the projects I built along the way."
         />
-        <div className="flex flex-col mt-10 gap-20 md:mt-20">
-          {portfolioProjects.map((project, projectIndex) => (
-            <Card
+        <div className="flex flex-col mt-10 gap-10 md:mt-20 md:gap-14">
+          {portfolioProjects.map((project) => (
+            <motion.div
               key={project.title}
-              className="px-8 md:px-10 pt-8 pb-0 md:pt-12 lg:px-20 lg:pt-16 sticky"
-              style={{
-                top: `calc(64px + ${projectIndex * 40}px)`,
-              }}
+              initial={{ opacity: 0, y: 28 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.15 }}
+              transition={{ duration: 0.3, ease: "easeOut" }}
             >
-              <div className="lg:grid lg:grid-cols-2 lg:gap-16">
-                <div className="lg:pb-16 relative">
-                  <div className="font-bold uppercase tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text text-sm">
-                    <span>{project.company}</span>
+              <Card className="px-6 py-8 md:px-10 md:py-12 lg:pl-16 lg:pr-0 lg:py-14">
+                <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] lg:gap-12 lg:items-center">
+                  <div className="relative lg:pr-0">
+                    <div className="font-bold uppercase tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text text-sm">
+                      <span>{project.company}</span>
+                    </div>
+                    <h3 className="font-serif text-2xl mt-2 md:mt-4 md:text-4xl">{project.title}</h3>
+                    <p className="text-white/60 text-sm md:text-base mt-3 md:mt-4">{project.description}</p>
                   </div>
-                  <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">{project.title}</h3>
-                  <p className="text-white/60 text-sm md:text-base mt-2 md:mt-3">{project.description}</p>
-                  <hr className="border-t-2 border-white/10 mt-4 md:mt-5" />
-                  <ul className="flex flex-col gap-4 mt-4 md:mt-5">
+                  <div className="relative mt-8 lg:mt-0">
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-auto rounded-xl border border-white/10 shadow-2xl shadow-black/40 pointer-events-none lg:rounded-r-none lg:border-r-0"
+                    />
+                  </div>
+                </div>
+
+                <div className="lg:pr-16">
+                  <hr className="border-t-2 border-white/10 mt-8 md:mt-10" />
+                  <ul className="mt-6 grid gap-4 md:grid-cols-2 md:gap-x-10">
                     {project.results.map((result) => (
                       <li key={result.title} className="flex gap-2 text-sm text-white/50 md:text-base">
                         <CheckCircleIcon className="size-5 flex-shrink-0" />
@@ -202,27 +216,20 @@ export const ProjectsSection = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={`Visit ${project.title} (opens in a new tab)`}
-                      className="relative bg-white text-gray-950 h-12 w-full rounded-xl font-semibold flex items-center justify-center gap-2 mt-8 px-6 md:w-auto text-center py-3 z-50 hover:bg-white/90 transition-colors"
+                      className="relative bg-white text-gray-950 h-12 w-full rounded-xl font-semibold flex items-center justify-center gap-2 mt-8 px-6 md:w-auto md:inline-flex text-center py-3 z-10 hover:bg-white/90 transition-colors"
                     >
                       Visit Live Site
                       <ArrowUpRightIcon className="size-4 md:size-5 ml-2" />
                     </a>
                   ) : (
-                    <p className="border border-white/15 text-white/50 h-12 w-full rounded-xl font-medium text-sm flex items-center justify-center gap-2 mt-8 px-6 md:w-auto text-center">
-                      <span className="size-1.5 rounded-full bg-emerald-300" aria-hidden="true" />
+                    <p className="border border-white/15 text-white/50 h-12 w-full rounded-xl font-medium text-sm flex items-center justify-center gap-2 mt-8 px-6 md:w-auto md:inline-flex text-center">
+                      <span className="size-1.5 rounded-full bg-emerald-300 flex-shrink-0" aria-hidden="true" />
                       Internal system — access is private
                     </p>
                   )}
                 </div>
-                <div className="relative">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:h-full lg:absolute lg:max-w-none lg:w-auto pointer-events-none"
-                  />
-                </div>
-              </div>
-            </Card>
+              </Card>
+            </motion.div>
           ))}
         </div>
       </div>
