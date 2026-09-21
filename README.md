@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mohamed Fouad — Portfolio
 
-## Getting Started
+Personal portfolio of **Mohamed Fouad**, Software Engineer based in Riyadh, Saudi Arabia.
 
-First, run the development server:
+Built with Next.js 14 (App Router), TypeScript, Tailwind CSS, and Framer Motion.
+
+## What's on the site
+
+- **Featured Projects** — production work only: Daftaar (a commercial SaaS I built and operate), plus the enterprise internal systems I deliver at GTS (intranet platform, project progress tracking, FLS pricing & quotation, internal AI assistant).
+- **Experience & Education** — roles, dates, and scope, kept in sync with my CV and LinkedIn.
+- **About** — the technologies I use day to day.
+- **Contact** — email, phone, and WhatsApp.
+
+The CV PDF served at `/Mohamed_Fouad_CV.pdf` is the current version.
+
+## Running locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+  app/          # App Router entry, metadata, JSON-LD structured data
+  sections/     # Hero, Projects, Experience, Testimonials (approach), About, Contact, Footer
+  components/   # Card, CardHeader, SectionHeader, TechIcon, ToolboxItems, HeroOrbit
+  assets/       # images and SVG icons
+public/         # CV PDF, OG image, robots.txt, sitemap.xml
+```
 
-## Learn More
+## Notes
 
-To learn more about Next.js, take a look at the following resources:
+- Internal systems built for an employer are described at a functional level only — no source, screenshots, or client data.
+- `public/og-image.png` is the link preview card used by LinkedIn, X, and WhatsApp.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contact
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Email: mofouad001@gmail.com
+- LinkedIn: https://www.linkedin.com/in/mohamed-fouad001
+- GitHub: https://github.com/MooFouad

@@ -7,9 +7,10 @@ const inter = Inter({subsets:['latin'], variable: '--font-sans'})
 const calistoga = Calistoga({subsets:['latin'], variable: '--font-serif', weight : ['400'],})
 
 export const metadata: Metadata = {
-  title: "Mohamed Fouad | Full Stack Developer | MERN Stack Expert",
-  description: "Frontend Developer with 3+ years of experience specializing in React.js, Next.js, and TypeScript. Currently building compliance systems, AI chatbots, and enterprise tools at GTS in Riyadh, Saudi Arabia. Expert in clean architecture, performance optimization, and real-world business impact.",
-  keywords: ["Mohamed Fouad", "Full Stack Developer", "MERN Stack Developer", "React.js Developer", "Next.js Developer", "Node.js Developer", "TypeScript Developer", "MongoDB Developer", "Web Developer Riyadh", "GTS Developer", "JavaScript Developer", "Full Stack Engineer Saudi Arabia", "Software Engineer"],
+  metadataBase: new URL("https://moofouad.github.io/portfolio"),
+  title: "Mohamed Fouad | Software Engineer | React, Next.js, TypeScript, Node.js",
+  description: "Software Engineer based in Riyadh, Saudi Arabia with 2+ years of experience building production web applications across the full stack. Builds enterprise internal systems at GTS and runs Daftaar, a commercial SaaS product.",
+  keywords: ["Mohamed Fouad", "Software Engineer", "Software Engineer Riyadh", "Full Stack Developer", "React.js Developer", "Next.js Developer", "Node.js Developer", "TypeScript Developer", "PostgreSQL", "Web Developer Saudi Arabia", "Software Engineer Saudi Arabia", "SaaS Developer", "Daftaar"],
   authors: [{ name: "Mohamed Fouad", url: "https://github.com/MooFouad" }],
   creator: "Mohamed Fouad",
   publisher: "Mohamed Fouad",
@@ -17,22 +18,22 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://moofouad.github.io/portfolio",
-    siteName: "Mohamed Fouad - Full Stack Developer Portfolio",
-    title: "Mohamed Fouad | Full Stack Developer | MERN Stack Expert",
-    description: "Experienced Full Stack Developer specializing in the MERN stack, Next.js, and TypeScript. Currently working at GTS in Riyadh, Saudi Arabia. Building scalable, high-performance web applications.",
+    siteName: "Mohamed Fouad - Software Engineer Portfolio",
+    title: "Mohamed Fouad | Software Engineer",
+    description: "Software Engineer in Riyadh building production web applications across the full stack — enterprise internal systems at GTS and Daftaar, a commercial SaaS product.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Mohamed Fouad - Full Stack Developer Portfolio",
+        alt: "Mohamed Fouad - Software Engineer Portfolio",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mohamed Fouad | Full Stack Developer",
-    description: "Full Stack Developer specializing in MERN stack, Next.js, and TypeScript. Architecting exceptional web applications with modern technologies.",
+    title: "Mohamed Fouad | Software Engineer",
+    description: "Software Engineer in Riyadh building production web applications with React, Next.js, TypeScript, and Node.js.",
     creator: "@Mo_fouad0",
     images: ["/og-image.png"],
   },
@@ -47,9 +48,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  verification: {
-    google: "your-google-verification-code",
-  },
 };
 
 export default function RootLayout({
@@ -61,7 +59,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Mohamed Fouad",
-    jobTitle: "Full Stack Developer",
+    jobTitle: "Software Engineer",
     worksFor: {
       "@type": "Organization",
       name: "GTS"
@@ -88,17 +86,16 @@ export default function RootLayout({
       "Next.js",
       "TypeScript",
       "JavaScript",
-      "HTML5",
-      "CSS3",
-      "Redux",
       "Node.js",
-      "MongoDB",
       "Express.js",
-      "Web Development",
-      "Frontend Development",
+      "PostgreSQL",
+      "MongoDB",
+      "SQL Server",
+      "REST API Design",
+      "Docker",
       "Full Stack Development",
-      "SEO",
-      "Responsive Design"
+      "SaaS Development",
+      "Web Performance"
     ]
   };
 

@@ -15,7 +15,6 @@ import { SiTailwindcss } from "react-icons/si";
 import { SiMui } from "react-icons/si";
 import { SiStyledcomponents } from "react-icons/si";
 import { FaSass } from "react-icons/fa";
-import { IoLogoFirebase } from "react-icons/io5";
 import { IoIosGitBranch } from "react-icons/io";
 import { FaGithub } from "react-icons/fa";
 import { RiNextjsLine } from "react-icons/ri";
@@ -23,7 +22,9 @@ import { FaNodeJs } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 import { SiPostman } from "react-icons/si";
-import { SiJest } from "react-icons/si";
+import { SiPostgresql } from "react-icons/si";
+import { DiMsqlServer } from "react-icons/di";
+import { FaDocker } from "react-icons/fa";
 import { FaKey } from "react-icons/fa";
 import { TbApi } from "react-icons/tb";
 import mapImage from "@/assets/images/map.png"
@@ -86,7 +87,7 @@ const frontendSkills = [
   },
 ]
 
-// Backend Skills - Row 2
+// Backend & Data - Row 2
 const backendSkills = [
   {
     title : "Node.js",
@@ -97,16 +98,28 @@ const backendSkills = [
     icon : < SiExpress />,
   },
   {
+    title : "REST API",
+    icon : < TbApi />,
+  },
+  {
+    title : "JWT Auth",
+    icon : < FaKey />,
+  },
+  {
+    title : "PostgreSQL",
+    icon : < SiPostgresql />,
+  },
+  {
     title : "MongoDB",
     icon : < SiMongodb />,
   },
   {
-    title : "Firebase",
-    icon : < IoLogoFirebase />,
+    title : "SQL Server",
+    icon : < DiMsqlServer />,
   },
   {
-    title : "Postman",
-    icon : < SiPostman />,
+    title : "Docker",
+    icon : < FaDocker />,
   },
   {
     title : "Git",
@@ -117,16 +130,8 @@ const backendSkills = [
     icon : < FaGithub />,
   },
   {
-    title : "Jest",
-    icon : < SiJest />,
-  },
-  {
-    title : "JWT Auth",
-    icon : < FaKey />,
-  },
-  {
-    title : "REST API",
-    icon : < TbApi />,
+    title : "Postman",
+    icon : < SiPostman />,
   },
 ]
 const hobbies = [
@@ -177,7 +182,7 @@ export const AboutSection = () => {
   const constraintRef = useRef(null);
   return <div id="about" className="py-20 lg:py-28">
     <div className="container">
-    <SectionHeader eyebrow="About Me" title="Beyond the Code" description="Discover my passions, technical toolkit, and the diverse interests that fuel my creativity and drive for excellence in software development." />
+    <SectionHeader eyebrow="About Me" title="Beyond the Code" description="My technical toolkit, what I am learning next, and the interests outside work that keep me sharp." />
     <div className="mt-20 flex flex-col gap-8">
       <div className="grid grid-cols-1 md:grid-cols-5 gap-8 lg:grid-cols-3">
         <Card className="h-[320px] md:col-span-2 lg:col-span-1">
@@ -202,7 +207,7 @@ export const AboutSection = () => {
         <Card className="h-[320px] p-0 md:col-span-3 lg:col-span-2">
           <CardHeader
             title="Technical Arsenal"
-            description="The cutting-edge technologies and frameworks I leverage to build exceptional digital solutions."
+            description="The technologies I use day to day to design, build, and ship production systems."
             className="px-6 pt-6"
           />  
         <ToolboxItems items={frontendSkills} className="" itemsWrapperClassName="animate-move-left [animation-duration:30s]" />
