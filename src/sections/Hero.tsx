@@ -76,7 +76,7 @@ export const HeroSection = () => {
         {/* btn container */}
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4 max-w-sm mx-auto md:max-w-none">
           <a
-            href="/Mohamed_Fouad_CV.pdf?v=2026-09"
+            href="/Mohamed_Fouad_CV.pdf?v=2026-09b"
             download
             target="_blank"
             rel="noopener noreferrer"
