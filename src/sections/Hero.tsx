@@ -94,29 +94,6 @@ export const HeroSection = () => {
           </Link>
         </div>
         {/*---------- btn container ----------*/}
-        {/* quick stats */}
-        <dl className="mt-12 grid grid-cols-2 gap-3 max-w-2xl mx-auto md:grid-cols-4 md:gap-5">
-          {[
-            { value: '2+', label: 'Years building for production' },
-            { value: '5', label: 'Systems in daily use' },
-            { value: '1', label: 'Commercial SaaS I run' },
-            { value: '200+', label: 'Employees served internally' },
-          ].map((stat) => (
-            <div
-              key={stat.label}
-              className="rounded-2xl border border-white/10 bg-white/5 px-4 py-4 text-center backdrop-blur-sm"
-            >
-              <dt className="sr-only">{stat.label}</dt>
-              <dd>
-                <span className="block font-serif text-2xl md:text-3xl bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-transparent">
-                  {stat.value}
-                </span>
-                <span className="mt-1 block text-xs leading-snug text-white/50">{stat.label}</span>
-              </dd>
-            </div>
-          ))}
-        </dl>
-        {/*---------- quick stats ----------*/}
       </div>
     </div>
   );
