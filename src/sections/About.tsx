@@ -180,7 +180,7 @@ const hobbies = [
 ]
 export const AboutSection = () => {
   const constraintRef = useRef(null);
-  return <div id="about" className="py-20 lg:py-28">
+  return <div id="about" className="py-20 lg:py-28 section-anchor">
     <div className="container">
     <SectionHeader eyebrow="About Me" title="Beyond the Code" description="My technical toolkit, what I am learning next, and the interests outside work that keep me sharp." />
     <div className="mt-20 flex flex-col gap-8">

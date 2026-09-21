@@ -19,7 +19,7 @@ const SectionHeader = ({
         <h2 className="font-serif text-3xl md:text-5xl text-center mt-6">
           {title}
         </h2>
-        <p className="text-center text-white/60 mt-4 max-w-md mx-auto lg:text-xl">
+        <p className="text-center text-white/60 mt-4 max-w-2xl mx-auto lg:text-lg">
           {description}
         </p>
       </>

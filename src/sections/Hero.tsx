@@ -74,26 +74,49 @@ export const HeroSection = () => {
         </div>
         {/*---------- heading ---------------*/}
         {/* btn container */}
-        <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
+        <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4 max-w-sm mx-auto md:max-w-none">
           <a
             href="/Mohamed_Fouad_CV.pdf"
             download
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Download CV as PDF"
-            className='hover:cursor-pointer z-50 inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl font-semibold'
+            className='hover:cursor-pointer z-50 inline-flex w-full md:w-auto justify-center items-center gap-2 border border-white/15 px-6 h-12 rounded-xl font-semibold hover:bg-white/5 transition-colors'
           >
             <ArrowDown className="size-4" />
             <span>Download CV</span>
           </a>
-          <Link href="https://www.linkedin.com/in/mohamed-fouad001" target='_blank' className='hover:cursor-pointer z-50'>
-            <button aria-label="Connect on LinkedIn" className='inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl '>
+          <Link href="https://www.linkedin.com/in/mohamed-fouad001" target='_blank' rel='noopener noreferrer' className='hover:cursor-pointer z-50 w-full md:w-auto'>
+            <button aria-label="Connect on LinkedIn" className='inline-flex w-full md:w-auto justify-center items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl hover:bg-white/90 transition-colors'>
               <span>👋</span>
               <span className='font-semibold'>Let's Connect</span>
             </button>
           </Link>
         </div>
         {/*---------- btn container ----------*/}
+        {/* quick stats */}
+        <dl className="mt-12 grid grid-cols-2 gap-3 max-w-2xl mx-auto md:grid-cols-4 md:gap-5">
+          {[
+            { value: '2+', label: 'Years building for production' },
+            { value: '5', label: 'Systems in daily use' },
+            { value: '1', label: 'Commercial SaaS I run' },
+            { value: '200+', label: 'Employees served internally' },
+          ].map((stat) => (
+            <div
+              key={stat.label}
+              className="rounded-2xl border border-white/10 bg-white/5 px-4 py-4 text-center backdrop-blur-sm"
+            >
+              <dt className="sr-only">{stat.label}</dt>
+              <dd>
+                <span className="block font-serif text-2xl md:text-3xl bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-transparent">
+                  {stat.value}
+                </span>
+                <span className="mt-1 block text-xs leading-snug text-white/50">{stat.label}</span>
+              </dd>
+            </div>
+          ))}
+        </dl>
+        {/*---------- quick stats ----------*/}
       </div>
     </div>
   );

@@ -95,7 +95,7 @@ const ModulePanel = ({ modules }: { modules: string[] }) => (
         <span className="size-2.5 rounded-full bg-white/15" />
         <span className="size-2.5 rounded-full bg-white/15" />
         <span className="size-2.5 rounded-full bg-white/15" />
-        <span className="ml-3 text-xs uppercase tracking-widest text-white/30">Modules</span>
+        <span className="ml-3 text-xs uppercase tracking-widest text-white/30">What it covers</span>
       </div>
       <div className="mt-5 flex flex-wrap gap-2">
         {modules.map((module) => (
@@ -113,26 +113,32 @@ const ModulePanel = ({ modules }: { modules: string[] }) => (
 
 export const ProjectsSection = () => {
   return (
-    <section id="projects" className="pb-16 lg:py-24">
+    <section id="projects" className="pb-16 lg:py-24 section-anchor">
       <div className="container">
         <SectionHeader
           eyebrow="Production Work"
           title="Featured Projects"
           description="Systems in daily use — a commercial SaaS product I run, and enterprise platforms that replaced spreadsheets, paper, and WhatsApp with software."
         />
-        <div className="flex flex-col mt-10 gap-20 md:mt-20">
+        <div className="flex flex-col mt-10 gap-8 md:mt-20 lg:gap-20">
           {portfolioProjects.map((project, projectIndex) => (
             <Card
               key={project.title}
-              className="px-8 md:px-10 pt-8 pb-8 md:pt-12 lg:px-20 lg:pt-16 lg:pb-16 sticky"
+              className="px-8 md:px-10 pt-8 pb-8 md:pt-12 lg:px-20 lg:pt-16 lg:pb-16 lg:sticky"
               style={{
                 top: `calc(64px + ${projectIndex * 40}px)`,
               }}
             >
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="relative">
-                  <div className="font-bold uppercase tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text text-sm">
-                    <span>{project.company}</span>
+                  <div className="flex items-center gap-3">
+                    <span className="font-mono text-xs text-white/30 tabular-nums">
+                      {String(projectIndex + 1).padStart(2, "0")} / {String(portfolioProjects.length).padStart(2, "0")}
+                    </span>
+                    <span className="h-px flex-1 bg-white/10" aria-hidden="true" />
+                    <span className="font-bold uppercase tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text text-xs md:text-sm">
+                      {project.company}
+                    </span>
                   </div>
                   <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">{project.title}</h3>
                   <p className="text-white/60 text-sm md:text-base mt-2 md:mt-3">{project.description}</p>
@@ -160,7 +166,8 @@ export const ProjectsSection = () => {
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="relative bg-white text-gray-950 h-12 w-full rounded-xl font-semibold flex items-center justify-center gap-2 mt-8 px-6 md:w-auto text-center py-3 z-50"
+                      aria-label={`Visit ${project.title} (opens in a new tab)`}
+                      className="relative bg-white text-gray-950 h-12 w-full rounded-xl font-semibold flex items-center justify-center gap-2 mt-8 px-6 md:w-auto text-center py-3 z-50 hover:bg-white/90 transition-colors"
                     >
                       Visit Live Site
                       <ArrowUpRightIcon className="size-4 md:size-5 ml-2" />

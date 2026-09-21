@@ -4,7 +4,7 @@ import SectionHeader from "@/components/SectionHeader";
 
 export const ExperienceSection = () => {
   return (
-    <div className="py-20 lg:py-28">
+    <div id="experience" className="py-20 lg:py-28 section-anchor">
       <div className="container">
         <SectionHeader
           eyebrow="Career Journey"

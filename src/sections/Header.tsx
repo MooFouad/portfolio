@@ -6,7 +6,7 @@ export const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "projects", "about", "contact"];
+      const sections = ["home", "projects", "experience", "about", "contact"];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -35,13 +35,15 @@ export const Header = () => {
   const navItems = [
     { id: "home", label: "Home", href: "#" },
     { id: "projects", label: "Projects", href: "#projects" },
+    { id: "experience", label: "Experience", href: "#experience" },
     { id: "about", label: "About", href: "#about" },
     { id: "contact", label: "Contact", href: "#contact" },
   ];
 
   return (
-    <div className="flex justify-center items-center fixed top-3 w-full z-10">
-      <nav className="flex gap-1 border border-white/15 rounded-full bg-white/10 backdrop-blur">
+    <header className="flex justify-center items-center fixed top-3 w-full z-10">
+      <a href="#projects" className="skip-link">Skip to content</a>
+      <nav aria-label="Main" className="flex gap-1 border border-white/15 rounded-full bg-gray-950/60 backdrop-blur-md shadow-lg shadow-black/20">
         {navItems.map((item) => (
           <a
             key={item.id}
@@ -59,6 +61,6 @@ export const Header = () => {
           </a>
         ))}
       </nav>
-    </div>
+    </header>
   );
 };
